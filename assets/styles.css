@@ -20,7 +20,8 @@ a:focus-visible { outline: 3px solid var(--clay); outline-offset: 5px; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 112px; border-bottom: 1px solid var(--line); }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-family: Georgia, serif; font-size: 26px; text-decoration: none; letter-spacing: -.04em; }
 .brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--clay); }
-nav { font-size: 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 14px; }
+nav a { white-space: nowrap; }
 .eyebrow { display: block; font-size: 12px; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); }
 h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.13; letter-spacing: -.04em; }
 .home { padding-block: 80px 64px; }
@@ -34,6 +35,7 @@ h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-
 .policy { max-width: 740px; padding-block: 64px; }
 .policy h1 { font-size: clamp(44px, 6vw, 64px); margin: 16px 0; }
 .policy h2 { font-size: 29px; margin: 42px 0 16px; }
+.policy h3 { font-size: 19px; line-height: 1.4; margin: 28px 0 12px; }
 .policy p, .policy ul { margin-block: 14px; }
 .policy li + li { margin-top: 10px; }
 .policy .note { margin: 32px 0; }
@@ -43,7 +45,7 @@ h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-
 .skip-link:focus { top: 16px; }
 @media (max-width: 560px) {
   .wrap { width: calc(100% - 40px); }
-  .site-header { min-height: 90px; gap: 16px; }
+  .site-header { min-height: 90px; gap: 12px; flex-wrap: wrap; padding-block: 20px; }
   .brand { font-size: 23px; gap: 8px; }
   nav { font-size: 13px; }
   .home, .policy { padding-block: 44px; }

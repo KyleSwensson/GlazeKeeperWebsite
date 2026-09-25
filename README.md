@@ -6,6 +6,7 @@ A responsive static website for Glaze Keeper. No build step, JavaScript, analyti
 
 - `index.html`: minimal app introduction.
 - `privacy/index.html`: privacy policy at the stable `/privacy/index.html` path.
+- `support/index.html`: contact details, bug-report guidance, and notebook FAQs.
 - `assets/styles.css`: shared colors, typography, mobile layout, and print styles.
 - `.nojekyll`: serves files directly on GitHub Pages.
 
@@ -13,7 +14,7 @@ A responsive static website for Glaze Keeper. No build step, JavaScript, analyti
 
 Confirm the policy against the actual submitted release, its bundled SDKs, and support email practices. The draft reflects the app source and privacy audit as of September 25, 2026; it is not a production-binary/network audit. Confirm the correspondence retention and service-provider commitments, and revise the date when finalizing. Public contact: Kyle Swensson, kyle.swensson.bis@gmail.com.
 
-Apple also requires an easily accessible privacy policy link inside the app. Once the site is live, add the URL below to Settings → About. The app's author credit has been updated, but the privacy link remains a release task. Keep App Store Connect’s App Privacy answers consistent with the released app. A public policy alone does not complete submission. Apple also requires a working support URL with current contact information; add support content before using this site for that separate field.
+Apple also requires an easily accessible privacy policy link inside the app. Once the site is live, add the URL below to Settings → About. The app's author credit has been updated, but the privacy link remains a release task. Keep App Store Connect’s App Privacy answers consistent with the released app. A public policy alone does not complete submission. Use the published Support page for the separate App Store Connect Support URL field.
 
 ## Publish on GitHub Pages
 
@@ -23,17 +24,19 @@ Repository: https://github.com/KyleSwensson/GlazeKeeperWebsite
 2. In GitHub, open **Settings → Pages**.
 3. Under **Build and deployment**, select **Deploy from a branch**, then **main** and **/ (root)**. Save.
 4. Enable **Enforce HTTPS** when available. Wait for deployment, then use **Visit site** to confirm the address. GitHub Free requires a public repository for Pages.
-5. Open both pages in a signed-out browser and check navigation and the contact email.
+5. Open all three pages in a signed-out browser and check navigation and the contact email.
 
 Expected homepage: https://kyleswensson.github.io/GlazeKeeperWebsite/
 
 Expected App Store Connect Privacy Policy URL: **https://kyleswensson.github.io/GlazeKeeperWebsite/privacy/index.html**
 
+Expected App Store Connect Support URL: **https://kyleswensson.github.io/GlazeKeeperWebsite/support/index.html**
+
 These are expected addresses, not confirmation that the site is live. Enter the working HTTPS privacy URL in App Store Connect’s App Privacy section and use that same address in the app.
 
 ## Preview and extend
 
-Open `index.html` or `privacy/index.html` directly in a browser for a quick preview. For an HTTP preview, serve this directory with any static file server.
+Open `index.html`, `privacy/index.html`, or `support/index.html` directly in a browser for a quick preview. For an HTTP preview, serve this directory with any static file server.
 
 Add future pages as `page-name/index.html`, link their stylesheet with `../assets/styles.css`, and reuse the semantic header/footer. Add navigation links to each page, pointing explicitly to its index.html file so links also work when opened directly from disk. Relative internal links work under GitHub Pages’ repository subdirectory and a future custom domain. Keep `/privacy/index.html` stable when expanding or migrating the site. Shared CSS variables provide the app’s cream, green, and clay palette.
 
